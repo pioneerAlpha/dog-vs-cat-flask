@@ -65,7 +65,7 @@ def upload_file():
         else:
             label = 'Cat'
             accuracy = round((1 - pred_prob) * 100, 2)
-
+                        
         return render_template('predict.html', image_file_name=file.filename, label=label, accuracy=accuracy)
 
 
